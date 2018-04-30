@@ -1,0 +1,52 @@
+{
+  "name": "chuck-norris-jokes",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/chuck-norris-jokes.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "browser": "dist/chuck-norris-jokes.js",
+  "scripts": {
+    "build": "stencil build",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev",
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/core": "0.7.22",
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.3",
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "jest": "^21.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickvaler/stencil-chuck-norris-jokes"
+  },
+  "author": "Patrick Valer <hello@patrickvaler.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickvaler/stencil-chuck-norris-jokes"
+  },
+  "homepage": "https://github.com/patrickvaler/stencil-chuck-norris-jokes",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}

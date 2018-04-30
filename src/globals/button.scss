@@ -1,0 +1,14 @@
+.btn {
+    font-size: 1.2em;
+    color: white;
+    padding: 1em 2.6em;
+    background-color:#009688;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-group {
+  .btn:not(:last-child) {
+    margin-right: 1em;
+  }
+}

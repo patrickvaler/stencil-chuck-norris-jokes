@@ -1,0 +1,14 @@
+chuck-norris-jokes {
+  .joke {
+    padding: 1.6em;
+    background: #FFEE58;
+    border-bottom: .5em solid #F9A825;
+
+    .joke__text {
+      font-size: 1.5em;
+      font-style: italic;
+      line-height: 1.5;
+      color: #333;
+    }
+  }
+}
