@@ -1,5 +1,5 @@
 {
-  "name": "chuck-norris-jokes",
+  "name": "stencil-chuck-norris-jokes",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/chuck-norris-jokes.js",
