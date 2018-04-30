@@ -1,6 +1,6 @@
 {
   "name": "stencil-chuck-norris-jokes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/chuck-norris-jokes.js",
   "types": "dist/types/components.d.ts",
