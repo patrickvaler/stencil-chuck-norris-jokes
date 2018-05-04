@@ -33,11 +33,6 @@ export class ChuckNorrisJokes {
   @Prop() firstname: string;
   @Prop() lastname: string;
 
-  likedIds: string[] = [];
-  @Event() selectLikeButton: EventEmitter;
-
-  @State() liked = false;
-
   componentWillLoad() {
     this.fetchRandomJoke();
   }
