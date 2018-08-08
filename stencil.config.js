@@ -1,13 +1,10 @@
-const sass = require('@stencil/sass');
+const { sass } = require('@stencil/sass');
 
 exports.config = {
   namespace: 'chuck-norris-jokes',
   plugins: [
     sass({
-      injectGlobalPaths: [
-        'src/globals/reset.scss',
-        'src/globals/button.scss'
-      ]
+      injectGlobalPaths: ['src/globals/reset.scss', 'src/globals/button.scss']
     })
   ],
   outputTargets: [
@@ -24,4 +21,4 @@ exports.config = {
 exports.devServer = {
   root: 'www',
   watchGlob: '**/**'
-}
+};

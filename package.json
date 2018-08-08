@@ -2,13 +2,13 @@
   "name": "stencil-chuck-norris-jokes",
   "version": "0.0.0-development",
   "description": "Stencil Component Starter",
-  "main": "dist/chuck-norris-jokes.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "files": [
     "dist/"
   ],
-  "browser": "dist/chuck-norris-jokes.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
