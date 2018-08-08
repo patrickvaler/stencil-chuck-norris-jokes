@@ -1,6 +1,8 @@
 
 # chuck-norris-jokes Web Component
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/patrickvaler/stencil-chuck-norris-jokes.svg)](https://greenkeeper.io/)
+
 This is a basic chuck-norris-jokes Web Component to display random Chuck Norris jokes created with [StencilJS]. This Web Component uses the [Chuck Norris API] to fetch randomly Chuck Norris jokes.
 
 Checkout the [Demo] / [Demo with Editor].

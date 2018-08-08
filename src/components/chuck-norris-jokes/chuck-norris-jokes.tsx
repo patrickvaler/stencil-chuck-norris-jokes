@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Prop, State, Event } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 
 interface Joke {
   id: string;
@@ -13,7 +13,8 @@ const GetRandomJokeUrl = 'https://api.chucknorris.io/jokes/random';
 })
 export class ChuckNorrisJokes {
   error = false;
-  @State() _joke: Joke;
+  @State()
+  _joke: Joke;
 
   set joke(joke: Joke) {
     if (this.firstname) {
@@ -30,8 +31,10 @@ export class ChuckNorrisJokes {
     return this._joke;
   }
 
-  @Prop() firstname: string;
-  @Prop() lastname: string;
+  @Prop()
+  firstname: string;
+  @Prop()
+  lastname: string;
 
   componentWillLoad() {
     this.fetchRandomJoke();
@@ -41,7 +44,7 @@ export class ChuckNorrisJokes {
     fetch(GetRandomJokeUrl)
       .then(this.handleError)
       .then(this.transformResponse)
-      .then((joke: Joke) => this.joke = joke)
+      .then((joke: Joke) => (this.joke = joke))
       .catch(() => (this.error = true));
   }
 
@@ -72,10 +75,7 @@ export class ChuckNorrisJokes {
       <div class="joke">
         <p class="joke__text">"{this.joke.value}"</p>
         <div class="btn-group">
-          <button
-            class="btn joke__action"
-            onClick={(event: UIEvent) => this.handleNext(event)}
-          >
+          <button class="btn joke__action" onClick={(event: UIEvent) => this.handleNext(event)}>
             Next
           </button>
         </div>

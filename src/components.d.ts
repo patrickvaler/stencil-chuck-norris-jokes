@@ -54,7 +54,6 @@ declare global {
     export interface ChuckNorrisJokesAttributes extends HTMLAttributes {
       'firstname'?: string;
       'lastname'?: string;
-      'onSelectLikeButton'?: (event: CustomEvent) => void;
     }
   }
 }
