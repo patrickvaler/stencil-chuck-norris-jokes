@@ -5,9 +5,8 @@ cache:
 notifications:
   email: false
 node_js:
+  - '11'
   - '10'
-  - '9'
-  - '8'
 before_install:
   - npm install -g greenkeeper-lockfile
 install: npm install # npm ci won't work with greenkeeper pull
