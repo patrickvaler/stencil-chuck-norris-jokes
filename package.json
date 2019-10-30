@@ -28,7 +28,7 @@
     "@stencil/sass": "^1.0.1",
     "@stencil/utils": "0.0.5",
     "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.11",
+    "@types/node": "^12.12.3",
     "jest": "^24.9.0",
     "semantic-release": "^15.13.24",
     "travis-deploy-once": "^5.0.11"
